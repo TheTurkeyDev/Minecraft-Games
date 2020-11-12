@@ -156,8 +156,6 @@ public class WebRequestBuilder
 		while((line = reader.readLine()) != null)
 			buffer.append(line);
 
-		System.out.println("Resp Code: " + con.getResponseCode());
-
 		return buffer.toString();
 	}
 

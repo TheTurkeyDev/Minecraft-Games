@@ -4,7 +4,6 @@ import dev.theturkey.minecraftsnake.PlayerConnection;
 import dev.theturkey.minecraftsnake.util.BlockPos;
 
 import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 
@@ -90,8 +89,6 @@ public class PacketBuffer
 	}
 
 	/* a lot of the below is stolen from DataOutputStream.java */
-	DataOutputStream sd;
-
 	public void writeBoolean(boolean value)
 	{
 		bytes.write(value ? 1 : 0);

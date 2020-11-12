@@ -8,6 +8,7 @@ import java.util.List;
 
 public class PacketHelper
 {
+	// This method is referenced from https://wiki.vg/Protocol Thanks #mcdevs!
 	public static int readVarInt(DataInputStream in) throws IOException
 	{
 		int numRead = 0;
@@ -29,6 +30,7 @@ public class PacketHelper
 		return result;
 	}
 
+	// This method is referenced from https://wiki.vg/Protocol Thanks #mcdevs!
 	public static int readVarInt(ByteBuffer in)
 	{
 		int numRead = 0;
@@ -50,6 +52,7 @@ public class PacketHelper
 		return result;
 	}
 
+	// This method is referenced from https://wiki.vg/Protocol Thanks #mcdevs!
 	public static byte[] writeVarInt(int value)
 	{
 		List<Byte> bytes = new ArrayList<>();
